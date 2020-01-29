@@ -6,14 +6,13 @@ class StudentsController < ApplicationController
     render "students/index"
   end
 
-  def show
+   def show
     @student = Student.find(params[:id])
-    if @student.save
-      
+
     render "students/show"
-    
-    end
+  
   end
+
 
   private
 
