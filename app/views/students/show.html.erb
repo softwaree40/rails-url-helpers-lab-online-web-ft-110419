@@ -4,5 +4,3 @@
  <%else%>
   <%="This student is currently inactive."%>
  <%end%>
-
-<div><%=link_to @student.active ? "Active" : "Inactive" , toggle_activate_path(@student) %></div>
